@@ -5,6 +5,7 @@
 #' 
 #' @docType package
 #' @name package-coper
+#' @import Rdpack
 #' @importFrom stats rnorm cor
 #' @importFrom Rcpp evalCpp
 #' @useDynLib coper

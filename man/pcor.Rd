@@ -10,27 +10,31 @@ pcor(X)
 \item{X}{an \eqn{(n\times p)} matrix whose rows are observations.}
 }
 \value{
-a \eqn{(p\times p)} partial correlation matrix.
+a named list containing: \describe{
+\item{C}{a \eqn{(p\times p)} partial correlation matrix.}
+}
 }
 \description{
-Compute a partial correlation matrix.
+Compute a partial correlation matrix using the regression method.
 }
 \examples{
-\donttest{
 ## generate a toy data from 5-dimensional standard normal
 n   = 25
 p   = 5
 dat = matrix(stats::rnorm(n*p), ncol=p)
 
 ## compute partial correlation
-C = coper::corr(dat)
+C = coper::corr(dat)$C
+
+## true model parameter from standard normal
+I = diag(5)
 
 ## visualize
 opar <- par(no.readonly=TRUE)
-par(pty="s")
-image(C, main="partial correlation")
+par(mfrow=c(1,2), pty="s")
+image(I, xaxt='n', yaxt='n', main="model")
+image(C, xaxt='n', yaxt='n', main="partial correlation")
 par(opar)
-}
 
 }
 \concept{correlation}

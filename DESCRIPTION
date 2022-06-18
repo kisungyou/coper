@@ -9,6 +9,7 @@ Description: More about what it does (maybe more than one
       line)
 License: MIT + file LICENSE
 Encoding: UTF-8
-Imports: Rcpp (>= 1.0.8.3), stats
+Imports: Rcpp (>= 1.0.8.3), stats, Rdpack
 LinkingTo: Rcpp, RcppArmadillo
 RoxygenNote: 7.2.0
+RdMacros: Rdpack
