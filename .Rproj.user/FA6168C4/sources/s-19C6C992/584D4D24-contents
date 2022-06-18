@@ -1,0 +1,16 @@
+#' Sample Covariance
+#' 
+#' 
+#' 
+#' 
+#' 
+#' @concept covariance
+#' @export
+cov <- function(X){
+  # CHECK
+  fname = "cov"
+  check_matrix(fname, X)
+
+  # COMPUTE
+  return(cpp_covSAM(X))
+}

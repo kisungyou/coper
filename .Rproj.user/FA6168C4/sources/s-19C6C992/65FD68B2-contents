@@ -1,0 +1,9 @@
+#' coper
+#' 
+#' 
+#' 
+#' @docType package
+#' @name package-coper
+#' @importFrom Rcpp evalCpp
+#' @useDynLib coper
+NULL

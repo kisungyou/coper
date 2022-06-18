@@ -1,0 +1,7 @@
+#' Pearson Correlation
+#' 
+#' 
+#' 
+#' @concept correlation
+#' @export
+corr

@@ -1,0 +1,27 @@
+{
+    "id": "93665D78",
+    "path": "~/Desktop/coper/R/utility_cov2pcor.R",
+    "project_path": "R/utility_cov2pcor.R",
+    "type": "r_source",
+    "hash": "1806792673",
+    "contents": "",
+    "dirty": false,
+    "created": 1655512635693.0,
+    "source_on_save": false,
+    "relative_order": 7,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "4,57",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1655513321,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1655513321913,
+    "read_only": false,
+    "read_only_alternatives": []
+}

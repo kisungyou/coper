@@ -1,0 +1,35 @@
+#' (Sample) Covariance
+#' 
+#' Compute an empirical sample covariance.
+#' 
+#' @param X an \eqn{(n\times p)} matrix whose rows are observations.
+#' 
+#' @return a \eqn{(p\times p)} covariance matrix.
+#' 
+#' @examples 
+#' \donttest{
+#' ## generate a toy data from 5-dimensional standard normal
+#' n   = 25
+#' p   = 5
+#' dat = matrix(stats::rnorm(n*p), ncol=p)
+#' 
+#' ## compute sample covariance
+#' S = coper::cov(dat)
+#' 
+#' ## visualize
+#' opar <- par(no.readonly=TRUE)
+#' par(pty="s")
+#' image(S, main="sample covariance")
+#' par(opar)
+#' }
+#' 
+#' @concept covariance
+#' @export
+cov <- function(X){
+  # CHECK
+  fname = "cov"
+  check_matrix(fname, X)
+
+  # COMPUTE
+  return(cpp_covSAM(X))
+}
